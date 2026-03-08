@@ -1,0 +1,10 @@
+**/.git
+**/.vscode
+**/.venv
+**/__pycache__
+**/*.pyc
+**/node_modules
+**/dist
+**/.angular
+**/.env
+**/.env.*

@@ -1,0 +1,29 @@
+repos:
+  - repo: https://github.com/pre-commit/pre-commit-hooks
+    rev: v5.0.0
+    hooks:
+      - id: check-yaml
+      - id: end-of-file-fixer
+      - id: trailing-whitespace
+      - id: check-added-large-files
+      - id: detect-private-key
+
+  - repo: https://github.com/PyCQA/flake8
+    rev: 7.1.1
+    hooks:
+      - id: flake8
+        additional_dependencies: []
+        args: ["--config=.flake8"]
+        files: ^api/
+        exclude: ^api/core/migrations/
+
+  - repo: local
+    hooks:
+      - id: secret-scan-mock
+        name: "Mock secret scan (gitleaks-style)"
+        entry: cmd.exe
+        args:
+          - /c
+          - C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe -NoProfile -ExecutionPolicy Bypass -File .\scripts\verify-structure.ps1 -SecretScan
+        language: system
+        pass_filenames: false

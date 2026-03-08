@@ -1,0 +1,15 @@
+{
+  "version": "0.1.0",
+  "project": "fincrime-graphops",
+  "prompts": [
+    {
+      "id": "fcg-001-health-summary",
+      "name": "Health Endpoint Summary",
+      "purpose": "Summarize API health data safely.",
+      "risk_level": "low",
+      "contains_pii": false,
+      "human_review_required": false,
+      "status": "draft"
+    }
+  ]
+}
