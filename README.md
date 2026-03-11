@@ -240,3 +240,7 @@ The Day Zero baseline is complete when all of the following are true:
 - `safety check` or `safety scan` completes
 - `develop` is pushed
 - `main` is pushed
+
+## License
+This repository is intended for educational and portfolio purposes.
+
