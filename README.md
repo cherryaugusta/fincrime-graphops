@@ -446,10 +446,6 @@ Use `.env.example` as the safe template and keep local secrets untracked.
 
 This project is licensed under the MIT License.
 
-Copyright (c) 2026 Cherry Augusta
-
-This repository is provided for educational and portfolio purposes only. The MIT License governs copying, modification, distribution, and reuse, but the repository remains unsuitable for regulated or production compliance use.
-
 See the [LICENSE](./LICENSE) file for full details.
 
 ---
